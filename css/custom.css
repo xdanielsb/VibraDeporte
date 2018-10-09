@@ -167,7 +167,7 @@ header.masthead {
 }
 
 header .layer {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7 );
   position: absolute;
   top: 0;
   left: 0;
@@ -216,6 +216,9 @@ header.masthead .device-container .screen img {
 @media( min-height: 750px){
   header.masthead .header-content h1{
     padding-top:10%;
+  }
+  .wrapper {
+    padding-top: 100px;
   }
 }
 
