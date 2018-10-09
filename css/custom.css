@@ -376,3 +376,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   display: table;
   color: #4ad1e5;
 }
+/* Who we are */
+
+section {
+  height: 100vh;
+}
