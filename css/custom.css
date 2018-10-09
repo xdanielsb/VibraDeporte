@@ -177,7 +177,7 @@ header .layer {
 
 header.masthead .header-content {
   max-width: 1000px;
-  padding-top: 30%;
+  padding-top: 20%;
   text-align: center;
 }
 
@@ -204,7 +204,7 @@ header.masthead .device-container .screen img {
   }
   header.masthead .header-content {
     margin-bottom: 0;
-    text-align: left;
+    text-align: center;
   }
   header.masthead .header-content h1 {
     font-size: 80px;
@@ -340,7 +340,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .wrapper {
   width: 980px;
-  margin: 30px auto;
+  margin: 100px auto;
   position: relative;
 }
 .counter {
@@ -356,8 +356,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   text-align: center;
 }
 .count-text {
-  font-size: 13px;
-  font-weight: normal;
+  font-size: 20px;
+  font-weight: bold;
   margin-top: 10px;
   margin-bottom: 0;
   text-align: center;
