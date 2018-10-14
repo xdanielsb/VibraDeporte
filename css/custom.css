@@ -178,7 +178,7 @@ header .layer {
 
 header.masthead .header-content {
   max-width: 1000px;
-  padding-top: 20%;
+  padding-top: 25%;
   text-align: center;
 }
 
@@ -339,23 +339,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 /* Who we are */
 
-section .masthead {
+section , .masthead {
   height: 100vh;
 }
 
 /* Services */
-
-
-
-.cards {
-  width: 80%;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  align-items: center;
-}
 
 #what {
     width: 100%;
