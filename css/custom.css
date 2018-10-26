@@ -345,12 +345,42 @@ section , .masthead {
 
 /* Services */
 
+.owner{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.text-carlos{
+  margin-top: 10px;
+  font-style: italic;
+
+}
+
+.name-carlos{
+  font-weight: bold;
+  margin: 0px auto;
+}
+
+.title-carlos{
+  margin: 0px auto;
+}
+
+
+.container h3{
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
 #what {
     width: 100%;
     display: flex;
     display: -webkit-flex;
     justify-content: center;
     -webkit-justify-content: center;
+}
+
+.card{
+  max-height: 300px;
 }
 
 .card--1 .card__img, .card--1 .card__img--hover {
