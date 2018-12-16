@@ -252,9 +252,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .who {
-  background: #0967a2;
-  background: -webkit-linear-gradient(#0967a2, #0d95ea);
-  background: linear-gradient(#0967a2, #0d95ea);
+  background: #0d95ea;
+  background: -webkit-linear-gradient(#0d95ea, #0967a2);
+  background: linear-gradient(#0d95ea, #0967a2);
 }
 
 .layer2 {
@@ -556,3 +556,24 @@ border-bottom-right-radius: 12px;
 }
 
 /* End acknowledgement */
+
+
+
+/* Prize */
+
+.prize-innova{
+  width: 80%;
+    text-align: center;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+    margin: 0px auto;
+    padding-bottom: 70px;
+}
+
+
+.title-prize{
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+/* end Prize */
