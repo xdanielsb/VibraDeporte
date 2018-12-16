@@ -1,0 +1,68 @@
+
+.card-event{
+  padding: 1em 0;
+  float: left;
+  width: 380px;
+}
+
+.events .events-overlay {
+  background: rgba(0,0,0,0.7);
+  position: relative;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.events:hover .events-overlay{
+  opacity: 1;
+  position: relative;
+}
+
+.events-image{
+  width: 100%;
+}
+
+.events-details {
+  position: relative;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.events:hover .events-details{
+  position: relative;
+  opacity: 1;
+}
+
+.events-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+
+.events-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}

@@ -576,4 +576,24 @@ border-bottom-right-radius: 12px;
   padding-bottom: 20px;
 }
 
+
 /* end Prize */
+
+
+
+
+/*
+
+Recent events
+*/
+
+
+.recent-events{
+  background: #0d95ea;
+  background: -webkit-linear-gradient(#0d95ea, #0967a2);
+  background: linear-gradient(#0d95ea, #0967a2);
+}
+
+/*
+  End recent events
+*/
