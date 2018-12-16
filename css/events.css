@@ -38,3 +38,27 @@
 .name {
   font-size: 1.5em;
 }
+
+
+/*
+
+Recent events
+*/
+
+
+
+.recent-events{
+  background: #00B285;
+  -webkit-transform: skew(0deg, -10deg);
+  transform: skew(0deg, -10deg);
+
+}
+.recent-events .container {
+  -webkit-transform: skew(0deg, 10deg);
+  transform: skew(0deg, 10deg);
+
+}
+
+/*
+  End recent events
+*/
