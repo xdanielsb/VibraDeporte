@@ -1,68 +1,40 @@
 
-.card-event{
-  padding: 1em 0;
-  float: left;
-  width: 380px;
+.gallery2 {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.events .events-overlay {
-  background: rgba(0,0,0,0.7);
+.gallery2-item {
+  width: 330px;
+  height: 265px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.gallery2-item img {
+  position: absolute;
+  width: 330px;
+  height: 265px;
+}
+
+.text-wrapper {
   position: relative;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.events:hover .events-overlay{
-  opacity: 1;
-  position: relative;
-}
-
-.events-image{
-  width: 100%;
-}
-
-.events-details {
-  position: relative;
+  width: 330px;
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  color: #fff;
+  opacity: 0;
 }
 
-.events:hover .events-details{
-  position: relative;
+.text-wrapper{
+  transition: all 0.8s ease;
+  background: rgba(0, 0, 0, 0.6);
   opacity: 1;
 }
 
-.events-details h3{
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-}
-
-.events-details p{
-  color: #fff;
-  font-size: 0.8em;
-}
-
-.fadeIn-bottom{
-  top: 80%;
-}
-
-.fadeIn-top{
-  top: 20%;
-}
-
-.fadeIn-left{
-  left: 20%;
-}
-
-.fadeIn-right{
-  left: 80%;
+.name {
+  font-size: 1.5em;
 }
