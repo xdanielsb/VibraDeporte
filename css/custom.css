@@ -252,9 +252,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .who {
-  background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539);
+  background: #0967a2;
+  background: -webkit-linear-gradient(#0967a2, #0d95ea);
+  background: linear-gradient(#0967a2, #0d95ea);
 }
 
 .layer2 {
