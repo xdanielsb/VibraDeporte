@@ -14,6 +14,7 @@
       <link href="css/loader.css" rel="stylesheet">
       <link href="css/steps.css" rel="stylesheet">
       <link href="css/events.css" rel="stylesheet">
+      <link href="css/popup.css" rel="stylesheet">
    </head>
    <body id="page-top">
       <div id="loader-wrapper">
@@ -239,15 +240,15 @@
       </section>
 
       <section class="recent-events">
-          <div class="container">
+          <div class="container html-code grid-of-images">
             <h3 class="title-prize"> Eventos Recientes </h3>
-            <div class="gallery2">
-              <a class="gallery2-item" href="#"><img src="img/event1.jpg" alt="Headshot of George Washington"><span class="text-wrapper"><span class="name">Allianz 10k de la luz</span><span class="title">2018 - Cali Colombia</span></span></a>
-              <a class="gallery2-item" href="#"><img src="img/event2.jpg" alt="Headshot of John Adams"><span class="text-wrapper"><span class="name">Maratón de Medellin</span><span class="title">2018 - Medellin Colombia</span></span></a>
-              <a class="gallery2-item" href="#"><img src="img/event3.jpg" alt="Headshot of Thomas Jefferson"><span class="text-wrapper"><span class="name">Carrera ZOO</span><span class="title">2018  Cali - Colombia</span></span></a>
-              <a class="gallery2-item" href="#"><img src="img/event4.jpg" alt="Headshot of George Washington"><span class="text-wrapper"><span class="name">New Balance 15K</span><span class="title">2018 - Cali Colombia</span></span></a>
-              <a class="gallery2-item" href="#"><img src="img/event5.jpg" alt="Headshot of John Adams"><span class="text-wrapper"><span class="name">10K Alas de acero</span><span class="title">2018 - Cali Colombia</span></span></a>
-              <a class="gallery2-item" href="#"><img src="img/event6.jpg" alt="Headshot of Thomas Jefferson"><span class="text-wrapper"><span class="name">21K OXXO CDMX</span><span class="title">2018  Ciudad de Mexico</span></span></a>
+            <div class="gallery2 popup-gallery">
+              <a class="gallery2-item" href="img/event1.jpg" title="Allianz 10k de la luz"><img src="img/event1.jpg" ><span class="text-wrapper"><span class="name">Allianz 10k de la luz</span><span class="title">2018 - Cali Colombia</span></span></a>
+              <a class="gallery2-item" href="img/event2.jpg"  title="Maratón de Medellin"><img src="img/event2.jpg"><span class="text-wrapper"><span class="name">Maratón de Medellin</span><span class="title">2018 - Medellin Colombia</span></span></a>
+              <a class="gallery2-item" href="img/event3.jpg" title="Carrerar ZOO"><img src="img/event3.jpg" ><span class="text-wrapper"><span class="name">Carrera ZOO</span><span class="title">2018  Cali - Colombia</span></span></a>
+              <a class="gallery2-item" href="img/event4.jpg"  title="New Balance 15K"><img src="img/event4.jpg"><span class="text-wrapper"><span class="name">New Balance 15K</span><span class="title">2018 - Cali Colombia</span></span></a>
+              <a class="gallery2-item" href="img/event5.jpg" title="10K Alas de acero"><img src="img/event5.jpg" ><span class="text-wrapper"><span class="name">10K Alas de acero</span><span class="title">2018 - Cali Colombia</span></span></a>
+              <a class="gallery2-item" href="img/event6.jpg" title="21K OXXO CDMX"><img src="img/event6.jpg" ><span class="text-wrapper"><span class="name">21K OXXO CDMX</span><span class="title">2018  Ciudad de Mexico</span></span></a>
             </div>
           </div>
 
@@ -276,6 +277,29 @@
       <script src="js/home.js"></script>
       <script src="js/carousel.js"></script>
       <script src="js/navbar.js"></script>
+      <script src="js/popup.min.js"></script>
+
+      <script type="text/javascript">
+$(document).ready(function() {
+$('.popup-gallery').magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  tLoading: 'Loading image #%curr%...',
+  mainClass: 'mfp-img-mobile',
+  gallery: {
+    enabled: true,
+    navigateByImgClick: true,
+    preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+  },
+  image: {
+    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+    titleSrc: function(item) {
+      return item.el.attr('title') + '<small>VibraDeporte.com</small>';
+    }
+  }
+});
+});
+</script>
       <script>
          $(document).ready(function() {
 
