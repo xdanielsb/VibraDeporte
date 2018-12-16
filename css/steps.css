@@ -116,8 +116,9 @@
 .steps-circles .tagline .title {
   position: relative;
   z-index: 1;
-  font-weight: normal;
-font-style: normal;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
 }
 
 
