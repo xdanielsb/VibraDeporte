@@ -145,6 +145,16 @@
   font-size: 20px;
   background: azure;
 }
+.recent-events .cont a {
+	display: block;
+	margin: auto;
+	margin-top: 100px;
+	text-decoration: none;
+	color: inherit;
+  font-weight: bold;
+  font-size: 20px;
+  background: azure;
+}
 
 @keyframes linear {
 
