@@ -45,7 +45,7 @@ h6 {
   font-family: 'Lora', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-  text-align: center; 
+  text-align: center;
 }
 
 p {
@@ -186,7 +186,7 @@ header.masthead .header-content h1 {
   font-size: 50px;
   font-family: 'Lora';
   font-weight: bold;
-  
+
 }
 
 header.masthead .device-container {
@@ -387,6 +387,18 @@ section , .masthead {
     background-image: url('../img/service1.jpg');
 }
 
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url('../img/service2.png');
+}
+
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('../img/service3.jpg');
+}
+
+.card--4 .card__img, .card--4 .card__img--hover {
+    background-image: url('../img/service4.jpg');
+}
+
 
 .card__img {
   visibility: hidden;
@@ -397,7 +409,7 @@ section , .masthead {
     height: 235px;
   border-top-left-radius: 12px;
 border-top-right-radius: 12px;
-  
+
 }
 
 .card__info-hover {
@@ -419,7 +431,7 @@ border-top-right-radius: 12px;
   border-top-left-radius: 12px;
 border-top-right-radius: 12px;
 top: 0;
-  
+
 }
 
 .card:hover {

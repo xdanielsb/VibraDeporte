@@ -15,289 +15,269 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="css/custom.css" rel="stylesheet">
     <style>
-
-
-/* The Loader */
-#loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  overflow: hidden;
-}
-.no-js #loader-wrapper {
-  display: none;
-}
-
-#loader {
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: transparent;
-  -webkit-animation: spin 1.7s linear infinite;
-          animation: spin 1.7s linear infinite;
-  z-index: 11;
-}
-#loader:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: red;
-  -webkit-animation: spin-reverse 0.6s linear infinite;
-          animation: spin-reverse 0.6s linear infinite;
-}
-#loader:after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: gray;
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin-reverse {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
-}
-@keyframes spin-reverse {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-}
-#loader-wrapper .loader-section {
-  position: fixed;
-  top: 0;
-  width: 51%;
-  height: 100%;
-  background: #222;
-  z-index: 10;
-}
-
-#loader-wrapper .loader-section.section-left {
-  left: 0;
-}
-
-#loader-wrapper .loader-section.section-right {
-  right: 0;
-}
-
-/* Loaded styles */
-.loaded #loader-wrapper .loader-section.section-left {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.loaded #loader-wrapper .loader-section.section-right {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.loaded #loader {
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}
-
-.loaded #loader-wrapper {
-  visibility: hidden;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  transition: all 0.3s 1s ease-out;
-}
+      /* The Loader */
+      #loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      overflow: hidden;
+      }
+      .no-js #loader-wrapper {
+      display: none;
+      }
+      #loader {
+      display: block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: transparent;
+      -webkit-animation: spin 1.7s linear infinite;
+      animation: spin 1.7s linear infinite;
+      z-index: 11;
+      }
+      #loader:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: red;
+      -webkit-animation: spin-reverse 0.6s linear infinite;
+      animation: spin-reverse 0.6s linear infinite;
+      }
+      #loader:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: gray;
+      -webkit-animation: spin 1s linear infinite;
+      animation: spin 1s linear infinite;
+      }
+      @-webkit-keyframes spin {
+      0% {
+      -webkit-transform: rotate(0deg);
+      }
+      100% {
+      -webkit-transform: rotate(360deg);
+      }
+      }
+      @keyframes spin {
+      0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      }
+      100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+      }
+      }
+      @-webkit-keyframes spin-reverse {
+      0% {
+      -webkit-transform: rotate(0deg);
+      }
+      100% {
+      -webkit-transform: rotate(-360deg);
+      }
+      }
+      @keyframes spin-reverse {
+      0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      }
+      100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+      }
+      }
+      #loader-wrapper .loader-section {
+      position: fixed;
+      top: 0;
+      width: 51%;
+      height: 100%;
+      background: #222;
+      z-index: 10;
+      }
+      #loader-wrapper .loader-section.section-left {
+      left: 0;
+      }
+      #loader-wrapper .loader-section.section-right {
+      right: 0;
+      }
+      /* Loaded styles */
+      .loaded #loader-wrapper .loader-section.section-left {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+      .loaded #loader-wrapper .loader-section.section-right {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+      .loaded #loader {
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      }
+      .loaded #loader-wrapper {
+      visibility: hidden;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      transition: all 0.3s 1s ease-out;
+      }
     </style>
-
   </head>
   <body id="page-top">
-<div id="loader-wrapper">
-  <div id="loader">
-  <!-- <img src="img/logo.png"/> -->
-  </div>
-  <div class="loader-section section-left"></div>
-  <div class="loader-section section-right"></div>
-  
-</div>
-    <div id="content">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img src="img/logo.png"/>
-        </a>
-        <button 
-          class="navbar-toggler navbar-toggler-right" 
-          type="button" data-toggle="collapse" 
-          data-target="#navbarResponsive" 
-          aria-controls="navbarResponsive"
-          aria-expanded="false" 
-          aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#who">¿Quienes somos?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#what">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#ack">Reconocimientos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#exp">Experiencia</a>
-            </li>
-          </ul>
-        </div>
+    <div id="loader-wrapper">
+      <div id="loader">
+        <!-- <img src="img/logo.png"/> -->
       </div>
-    </nav>
-    <header class="masthead">
-      <div class ="layer">
-        <div class="container h-100">
-          <div class="">
-            <div class="header-content mx-auto">
-              <h1 class="mb-1" style="color:red;display:inline-block;">Vibra</h1>
-              <h1 class="mb-1" style="color:gray;display:inline-block">Deporte</h1>
-              <div class="text-center">
-                <div class="row " style="margin-top:10%">
-                  <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <i class="fa  fa-globe-americas fa-2x"></i>
-                    <h2 class="timer count-title count-number" data-to="8" data-speed="6000"></h2>
-                    <p class="count-text ">Paises</p>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img src="img/logo.png"/>
+          </a>
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button" data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#who">¿Quienes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#what">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#ack">Reconocimientos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#exp">Experiencia</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header class="masthead">
+        <div class ="layer">
+          <div class="container h-100">
+            <div class="">
+              <div class="header-content mx-auto">
+                <h1 class="mb-1" style="color:red;display:inline-block;">Vibra</h1>
+                <h1 class="mb-1" style="color:gray;display:inline-block">Deporte</h1>
+                <div class="text-center">
+                  <div class="row " style="margin-top:10%">
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                      <i class="fa  fa-globe-americas fa-2x"></i>
+                      <h2 class="timer count-title count-number" data-to="8" data-speed="6000"></h2>
+                      <p class="count-text ">Paises</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                      <i class="fa fa-map-marked-alt fa-2x"></i>
+                      <h2 class="timer count-title count-number" data-to="85" data-speed="6000"></h2>
+                      <p class="count-text ">Carreras</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                      <i class="fa fa-walking fa-2x"></i>
+                      <h2 class="timer count-title count-number" data-to="300000" data-speed="6000"></h2>
+                      <p class="count-text ">Atletas</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                      <i class="fa fa-percent fa-2x"></i>
+                      <h2 class="timer count-title count-number" data-to="98" data-speed="6000"></h2>
+                      <p class="count-text ">Satisfacción</p>
+                    </div>
                   </div>
-                  <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <i class="fa fa-map-marked-alt fa-2x"></i>
-                    <h2 class="timer count-title count-number" data-to="85" data-speed="6000"></h2>
-                    <p class="count-text ">Carreras</p>
-                  </div>
-
-                  <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <i class="fa fa-walking fa-2x"></i>
-                    <h2 class="timer count-title count-number" data-to="300000" data-speed="6000"></h2>
-                    <p class="count-text ">Atletas</p>
-                  </div>
-                  <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <i class="fa fa-percent fa-2x"></i>
-                    <h2 class="timer count-title count-number" data-to="98" data-speed="6000"></h2>
-                    <p class="count-text ">Satisfacción</p>
-                  </div>  
-                </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+    </div>
     </header>
-
     <section  id="what" style="display:block;">
-
-
-
       <div class="container d-none d-lg-block">
-        <h3> Servicios </h3> 
-
+        <h3> Servicios </h3>
         <div class=" row">
           <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-             <article class="card card--1">
-                <div class="card__img "></div>
-                <a href="#" class="card_link ">
-                  <div class="card__img--hover"></div>
-                </a>
-                <div class="card__info">
-                  <span class="card__category"> 1 </span>
-                  <h3 class="card__title">Registro audiovisual de atletas en carrera</h3>
-                </div>
-              </article>
-          </div>
 
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
             <article class="card card--1">
-              <div class="card__img"></div>
-              <a href="#" class="card_link">
+              <div class="card__img "></div>
+              <a href="#" class="card_link ">
                 <div class="card__img--hover"></div>
               </a>
               <div class="card__info">
                 <span class="card__category"> 1 </span>
-                <h3 class="card__title">Plataforma gana corriendo</h3>
+                <h3 class="card__title">Registro audiovisual de atletas en carrera</h3>
               </div>
             </article>
-
           </div>
+
           <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-            <article class="card card--1">
+            <article class="card card--2">
               <div class="card__img"></div>
               <a href="#" class="card_link">
                 <div class="card__img--hover"></div>
               </a>
               <div class="card__info">
-               <span class="card__category"> 1 </span>
+                <span class="card__category"> 2 </span>
+                <h3 class="card__title">Plataforma gana corriendo</h3>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <article class="card card--3">
+              <div class="card__img"></div>
+              <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+              </a>
+              <div class="card__info">
+                <span class="card__category"> 3 </span>
                 <h3 class="card__title">Cursos e-learning para atletas</h3>
               </div>
             </article>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-            <article class="card card--1">
+            <article class="card card--4">
               <div class="card__img"></div>
               <a href="#" class="card_link">
                 <div class="card__img--hover"></div>
               </a>
               <div class="card__info">
-                <span class="card__category"> 1 </span>
+                <span class="card__category"> 4 </span>
                 <h3 class="card__title">Coach Virtual para entrenamiento</h3>
               </div>
             </article>
           </div>
-
         </div>
       </div>
-
-
       <div class="owner">
         <img class="rounded-circle mx-auto d-block" src="img/carlos.jpg" width="100" height="130">
         <p class="name-carlos"> Carlos Angarita </p>
@@ -306,46 +286,36 @@
           <p class="mb-0" >"No era problema de la flecha, era del indio."</p>
         </blockquote>
       </div>
-
-
-
     </section>
-
-
-
-
     <section class="who" id="who">
       <div class="container-fluid text-justify" style="margin-top: 20px;">
         <div class="row justify-content-around" >
-        <div class="col-12 col-sm-12 col-md-5"  >
-          <h3> Vibra Deporte  </h3>
-          <p>
-          Proveer servicios integrales a : Atletas, Organizadores de Eventos deportivos y Marcas proveedoras de productos o servicios para aficionados al deporte. Los servicios a cada uno de estos clientes, son:
-          A los Atletas les proveemos registros audiovisuales de su participación en carreras, como elemento motivacional para la práctica deportiva.
-          A los Organizadores de eventos deportivos les ofrecemos herramientas tecnológicas que permiten atraer un mayor número de marcas patrocinadoras e incrementar el valor de los aportes económicos de los patrocinadores al evento. Y con respecto a los atletas le permitimos al Organizador aumentar el número de atletas inscritos en los eventos, mejorar la atención de peticiones de servicio de los atletas y fidelizar la participación de estos.
-          A las marcas proveedoras de productos o servicios para aficionados al deporte, les brindamos una exposición publicitaria masiva y viral a través de todo el material de fotografía y video que los atletas descargan y comparten en redes sociales. 
-          </p>
-        </div>
-        <div  class ="col-12 col-sm-12 col-md-5 col-md-offset-2 d-none d-lg-block ">
-          <div  class="row" >
-            <h3> Misión </h3>
+          <div class="col-12 col-sm-12 col-md-5"  >
+            <h3> Vibra Deporte  </h3>
             <p>
-            Vibra Deporte proveerá un ecosistema de herramientas tecnológicas que satisfagan las necesidades de Atletas, Organizadores de eventos deportivos y Proveedores de servicios o productos para aficionados al deporte, generando sinergia entre ellos que se traduzca en incentivar la práctica deportiva como un medio brindar mejor calidad de vida a las personas.
+              Proveer servicios integrales a : Atletas, Organizadores de Eventos deportivos y Marcas proveedoras de productos o servicios para aficionados al deporte. Los servicios a cada uno de estos clientes, son:
+              A los Atletas les proveemos registros audiovisuales de su participación en carreras, como elemento motivacional para la práctica deportiva.
+              A los Organizadores de eventos deportivos les ofrecemos herramientas tecnológicas que permiten atraer un mayor número de marcas patrocinadoras e incrementar el valor de los aportes económicos de los patrocinadores al evento. Y con respecto a los atletas le permitimos al Organizador aumentar el número de atletas inscritos en los eventos, mejorar la atención de peticiones de servicio de los atletas y fidelizar la participación de estos.
+              A las marcas proveedoras de productos o servicios para aficionados al deporte, les brindamos una exposición publicitaria masiva y viral a través de todo el material de fotografía y video que los atletas descargan y comparten en redes sociales.
             </p>
           </div>
-          <div  class="row">
-            <h3>Visión</h3>
-            <p>
-            Para diciembre de 2023 Vibra Deporte estará desarrollando operaciones en al menos 50 países distribuidos en todos los continentes y tendrá una cobertura de al menos 250 eventos anualmente.
-            </p>
+          <div  class ="col-12 col-sm-12 col-md-5 col-md-offset-2 d-none d-lg-block ">
+            <div  class="row" >
+              <h3> Misión </h3>
+              <p>
+                Vibra Deporte proveerá un ecosistema de herramientas tecnológicas que satisfagan las necesidades de Atletas, Organizadores de eventos deportivos y Proveedores de servicios o productos para aficionados al deporte, generando sinergia entre ellos que se traduzca en incentivar la práctica deportiva como un medio brindar mejor calidad de vida a las personas.
+              </p>
+            </div>
+            <div  class="row">
+              <h3>Visión</h3>
+              <p>
+                Para diciembre de 2023 Vibra Deporte estará desarrollando operaciones en al menos 50 países distribuidos en todos los continentes y tendrá una cobertura de al menos 250 eventos anualmente.
+              </p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
-
-
-
     <section id="ack" style="background: linear-gradient(#fdcc52, #fdc539);">
       <div style="width:100%">
         <h3> Premio INNOVA en la molalidad "Innovación en Servicio </h3>
@@ -367,7 +337,7 @@
         </div>
       </div>
     </section>
-    <section id="exp"> 
+    <section id="exp">
     </section>
     <footer>
       <div class="container">
@@ -385,23 +355,21 @@
         </ul>
       </div>
     </footer>
-
     </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
     <script src="js/home.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/navbar.js"></script>
+    <script>
+      $(document).ready(function() {
 
-  <script>
-$(document).ready(function() {
- 
-  // Fakes the loading setting a timeout
-    setTimeout(function() {
-        $('body').addClass('loaded');
-    }, 1000);
- 
-});
-  </script>
+        // Fakes the loading setting a timeout
+          setTimeout(function() {
+              $('body').addClass('loaded');
+          }, 1000);
+
+      });
+
+    </script>
   </body>
 </html>
-
