@@ -3,17 +3,17 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.hero-circles {
+.steps-circles {
   width: 100vh;
   margin: 0px auto;
 }
 
-.hero-circles ul {
+.steps-circles ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.hero-circles li {
+.steps-circles li {
   position: relative;
   width: 20%;
   margin-left: 30px;
@@ -25,14 +25,14 @@
     font-weight: bold;
 }
 
-.hero-circles li.active .border, .hero-circles li:hover .border {
+.steps-circles li.active .border, .steps-circles li:hover .border {
   background-color: #1c1c1e;
   z-index: 2;
 }
-.hero-circles li.active .circle, .hero-circles li:hover .circle {
+.steps-circles li.active .circle, .steps-circles li:hover .circle {
   z-index: 3;
 }
-.hero-circles .border {
+.steps-circles .border {
   position: absolute;
   display: block;
   top: -4px;
@@ -42,14 +42,14 @@
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
-.hero-circles .border:after {
+.steps-circles .border:after {
   content: "";
   display: block;
   width: 100%;
   padding-bottom: 100%;
 }
 
-.hero-circles .circle {
+.steps-circles .circle {
   position: relative;
   width: 100%;
   padding-bottom: 100%;
@@ -58,13 +58,13 @@
   overflow: hidden;
   transform: translate(0, 0);
 }
-.hero-circles .expander-nav .create {
+.steps-circles .expander-nav .create {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/125707/home-create-thumb.png);
 }
-.hero-circles .expander-nav .evolve {
+.steps-circles .expander-nav .evolve {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/125707/home-evolve-thumb.png);
 }
-.hero-circles .expander-nav .discover {
+.steps-circles .expander-nav .discover {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/125707/home-discover-thumb.png);
 }
 
@@ -74,7 +74,7 @@
 }
 
 
-.hero-circles .tagline {
+.steps-circles .tagline {
   position: relative;
   text-align: center;
   font-size: 30px;
@@ -82,15 +82,15 @@
   font-style: italic;
   margin: 30px 0 0;
 }
-.hero-circles .tagline a {
+.steps-circles .tagline a {
   color: #242529;
   text-decoration: none;
 }
-.hero-circles .tagline a:hover {
+.steps-circles .tagline a:hover {
   text-decoration: underline;
 }
 
-.hero-circles .tagline:before {
+.steps-circles .tagline:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -101,23 +101,31 @@
   color: #dfdfdf;
 }
 
-.hero-circles .tagline.first:before {
+.steps-circles .tagline.first:before {
   content: "1";
 }
-.hero-circles .tagline.second:before {
+.steps-circles .tagline.second:before {
   content: "2";
 }
-.hero-circles .tagline.third:before {
+.steps-circles .tagline.third:before {
   content: "3";
 }
-.hero-circles .tagline.fourth:before {
+.steps-circles .tagline.fourth:before {
   content: "4";
 }
-.hero-circles .tagline .title {
+.steps-circles .tagline .title {
   position: relative;
   z-index: 1;
 }
 
-.hero-subtitle {
-  font-size: 34px;
+
+.steps{
+  background: #0d95ea;
+  -webkit-transform: skew(0deg, 5deg);
+  transform: skew(0deg, 5deg);
+
+}
+.steps .content {
+  -webkit-transform: skew(0deg, -5deg);
+  transform: skew(0deg, -5deg);
 }
